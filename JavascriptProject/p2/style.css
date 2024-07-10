@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.button{
+    background-color: black;
+    text-color: white;
+    content-position:Top center;
+    add button:Green;
+    Delete button:Red;
+}

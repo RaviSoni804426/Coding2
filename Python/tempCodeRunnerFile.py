@@ -1,0 +1,1 @@
+Check if array represents fibonacci sequence or not
