@@ -16,10 +16,11 @@ class Heap{
     void push(int val){
         a.push_back(val);
         sz++;
-        int idx=sz-1;
-        while(idx>0 && a[idx]<a[(idx-1)/2]){
-            swap(a[idx],a[(idx-1)/2]);
-            idx=(idx-1)/2;
+        int idx=sz;
+        while(idx!=0 && a[idx]<a[parent(idx)]){
+            swap(a[idx],a[parent(idx)]);
+            idx=parent(idx);
+        }
         }
     void pop(){
         if(sz==0) return;
@@ -27,17 +28,25 @@ class Heap{
         sz--;
         int idx=0;
         while(true){
-            int left=2*idx+1;
-            int right=2*idx+2;
-            int minidx=idx;
-            if(left<sz && a[left]<a[minidx]) minidx=left;
-            if(right<sz && a[right]<a[minidx]) minidx=right;
-            if(minidx==idx) break;
-            swap(a[idx],a[minidx]);
-            idx=minidx;
+            int lc=leftchild(idx);
+            int rc=rightchild(idx);
+            int smallest=idx;
+            if(lc<sz && a[smallest]>a[lc]) smallest=lc;
+            if(rc<sz && a[smallest]>a[rc]) smallest=rc;
+            if(smallest!=idx){
+                swap(a[idx],a[smallest]);
+                idx=smallest;
+            }
+            else break;
+           
         }
-        int top{
-            return a[sz];
+        int top(){
+            if(isEmpty()){
+                cout<<"Heap is empty\n";
+                return -1;}
+                
+            }
+            return a[0];
 
         }
         bool isEmpty(){
@@ -46,7 +55,13 @@ class Heap{
         int size(){
             return sz;
         }
+        void display(){ 
+            for(int i=0;i<sz;i++){
+                cout<<a[i]<<" ";
+            }
+            cout<<endl;
+    
     }
-
-
 }
+this is he implemet of the code in of heap 
+
