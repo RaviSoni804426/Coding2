@@ -1,4 +1,6 @@
+//next grater element
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-link3dlist ka 2
+    stack<int>st;
+}
