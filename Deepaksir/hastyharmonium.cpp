@@ -3,14 +3,15 @@ using namespace std;
 int main() {
     string s;
     cin >> s;
-    string t = string(1, s[0]);
-    for (int i = 1; i < s.size(); i++) {
-        if (s[i] < t.back()) {
-            t += s[i];
-        }
-    }
+    int n = s.length();
+    string arr[n];
+    string concat = s + s;
 
-    cout << t << endl;
+    for (int i = 0; i < n; i++)
+        arr[i] = concat.substr(i, n);
+    
+    sort(arr, arr + n);
 
+    cout << arr[0] << endl;
     return 0;
 }
