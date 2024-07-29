@@ -1,26 +1,37 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main(){
-    int size=5;
-    int arr[size]={1,2,3,4,8};
-    
-    for(int i=0;i<size;i++){
-        cout<<arr[i]<<" ";
-       int count=0;  
-        for(int j=0;j<i;j++){
-            if(arr[j]%2!=0) count++;
+
+int main() {
+    int arr[] = {0, 1, 0, 3, 12};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Original array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0 && arr[j] == 0) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        if (arr[j] != 0) {
+            j++;
         }
     }
-    vector<int>result;
-    int k=0;
-    for(int i=0;i<size;i++){
-        if(arr[i]%2!=0){
-            result[k]=arr[i];
-            k++;
-        }
+
+    cout << "Array after moving zeros: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
-    cout<<result[k];
-    
+    cout << endl;
+
+    return 0;
 }
 
+
+    
     
