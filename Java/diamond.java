@@ -8,10 +8,10 @@ class Pattern{
                System.out.print("* ");
            }
            for(int k = 1; k <= i - 1; ++k){
-               System.out.print("_ ");
+               System.out.print(" ");
            }
            for(int k = 1; k <= i - 1; ++k){
-               System.out.print("_ ");
+               System.out.print(" ");
            }
             for(int j = 1; j <= 5-i+1; ++j){
                System.out.print("* ");
@@ -26,10 +26,10 @@ class Pattern{
                 System.out.print("* ");
             }
             for(int k = 1; k <= (4 - i); ++k){
-                System.out.print("_ ");
+                System.out.print(" ");
             }
             for(int k = 1; k <= (4 - i); ++k){
-                System.out.print("_ ");
+                System.out.print(" ");
             }
             for(int j = 1; j <= (i + 1); ++j){
                 System.out.print("* ");
