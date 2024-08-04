@@ -34,13 +34,56 @@ class Node{
         this->next = NULL;
     }
 };
+class Linkedlist{
+    Node* head;
+    Node* tail;
+    int size;
+    Linkedlist(){
+        head=NULL;
+        tail=NULL;
+        size=0;
+    }
+    void insertAtBeginning(int value){
+        Node* newNode=new Node(value);
+        if(head==NULL){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            newNode->next=head;
+            head=newNode;
+        }
+        size++;
+    }
+    void insertAtEnd(int value){
+        Node* temp=new Node(value);
+        if(size==0) head=tail=temp;
+        else{
+            tail->next=temp;
+            tail=temp;
+        }
+        size++;
+    }
+    void display(){
+        Node* temp=head;
+        while(temp!=NULL){
+            cout<<temp->value<<" ";
+            temp=temp->next;
+        }
+        cout<<endl;
+    }
+};
 int main(){
-    Node* a=new Node(4);
-    Node* b=new Node(3);
-    Node* c=new Node(2);
-    a->next=b;
-    b->next=c;
-    cout<<a->value<<" ";
-    
+ Linkedlist l1;
+ l1.inserAtEnd(10);
+ l1.inserAtEnd(20);
+ l1.inserAtEnd(30);
+ l1.display();
+ l1.insertAtBeginning(5);
+ l1.display();
+
+
+
+
 }
 
