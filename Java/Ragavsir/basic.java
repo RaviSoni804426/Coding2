@@ -9,10 +9,10 @@ public class basic{
         System.out.println("hello pw");
     }
 }
-import java.util.Scanner;
-public class basic{
-    public static void main(String[] args){
-        Scanner scan=new Scanner(System.in);
-        int x=scan.nextINt()
-    }
-}
+// import java.util.Scanner;
+// public class basic{
+//     public static void main(String[] args){
+//         Scanner scan=new Scanner(System.in);
+//         int x=scan.nextINt()
+//     }
+// }

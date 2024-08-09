@@ -1,13 +1,11 @@
-public class Main
+import java.util.*;
+public class pattern
 {
-    char ch='A';
-	public static void main(String[] args) {
-	for(int i=1;i<=5;i++){
-	    for(int j=1;j<=5-i+1;j++){
-	        System.out.print(ch);
-	    }
-	    ch++;
-	System.out.println();
+    static char ch = 'A'; 
+    public static void main(String[] args) {
+        System.out.print(ch);
+        ch++;
+    }
+
 }
-}
-}
+
