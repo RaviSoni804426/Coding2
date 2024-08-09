@@ -8,4 +8,8 @@ public class pattern
     }
 
 }
+1
+3 8 5
+7 9 40 11 13
+print this pattern without using input number.in java.
 
