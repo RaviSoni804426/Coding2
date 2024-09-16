@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "db.relational-data.org",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "FirstMySQLConnection",
+            "username": "guest",
+            "password": "relational",
+            "database": "tpcds"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "db.relational-data.org",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Project",
+            "database": "tpcds",
+            "username": "guest",
+            "password": "relational",
+            "connectionTimeout": 30
+        }
+    ]
+}
