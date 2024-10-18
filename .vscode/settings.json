@@ -29,5 +29,6 @@
             "password": "relational",
             "connectionTimeout": 30
         }
-    ]
+    ],
+    "window.zoomLevel": 1
 }
