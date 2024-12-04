@@ -1,6 +1,5 @@
-#include<bits/stdc++.h>
-#include<unordered_set>
-using namesapce std;
+#include <bits/stdc++.h>
+using namespace std;
 int main(){
     unordered_set<int>s;
     s.insert(1);
