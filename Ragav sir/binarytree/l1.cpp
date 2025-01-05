@@ -18,6 +18,9 @@ void displayTree(Node* root){
     displayTree(root->right);
 
 }
+int sum(Node* root){
+    
+}
 int main(){
     Node* a=new Node(1);
     Node* b=new Node(2);
