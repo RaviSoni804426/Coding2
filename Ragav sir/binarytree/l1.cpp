@@ -35,3 +35,4 @@ int main(){
     displayTree(a);
 
 }
+// this is the binary search implemeantaion.
