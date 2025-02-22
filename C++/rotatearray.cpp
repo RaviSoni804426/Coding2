@@ -8,5 +8,3 @@ int main(){
           return arr;
       }
   }
-  this is the best code.
-  this is code that solve the sum of two number problem.
